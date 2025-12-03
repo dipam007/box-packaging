@@ -90,10 +90,10 @@ export function Navbar() {
                     e.preventDefault();
                     scrollToSection(item.href);
                   }}
-                  className={`relative px-3 xl:px-4 py-2 text-sm font-medium transition-colors ${
+                className={`relative px-3 xl:px-4 py-2 text-sm font-medium transition-colors ${
                     activeSection === item.href.substring(1)
                       ? "text-primary"
-                      : "text-secondary-foreground hover:text-primary"
+                      : "text-keshar-cream/90 hover:text-primary"
                   }`}
                   whileHover={{ scale: 1.05 }}
                 >
@@ -108,22 +108,21 @@ export function Navbar() {
               ))}
             </div>
 
-            {/* CTA Button */}
-            <div className="hidden md:flex items-center gap-4">
+            {/* CTA Button - Desktop only, hidden on mobile since mobile menu has it */}
+            <div className="hidden lg:flex items-center gap-4">
               <motion.a
                 href="tel:+919876543210"
-                className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-full text-sm font-semibold hover:bg-primary/90 transition-colors"
+                className="flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-full text-sm font-semibold hover:bg-primary/90 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Phone className="w-4 h-4" />
-                <span className="hidden xl:inline">Call Now</span>
+                Call Now
               </motion.a>
             </div>
 
             {/* Mobile Menu Button */}
             <motion.button
-              className="lg:hidden p-2 text-secondary-foreground"
+              className="lg:hidden p-2 text-keshar-cream"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               whileTap={{ scale: 0.9 }}
             >
@@ -160,10 +159,10 @@ export function Navbar() {
                       e.preventDefault();
                       scrollToSection(item.href);
                     }}
-                    className={`px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                  className={`px-4 py-3 rounded-lg text-base font-medium transition-colors ${
                       activeSection === item.href.substring(1)
-                        ? "bg-primary/10 text-primary"
-                        : "text-secondary-foreground hover:bg-muted"
+                        ? "bg-primary/20 text-primary"
+                        : "text-keshar-cream hover:bg-primary/10 hover:text-primary"
                     }`}
                   >
                     {item.label}
