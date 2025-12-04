@@ -23,7 +23,6 @@ export function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      // Update active section based on scroll position
       const sections = navItems.map((item) => item.href.substring(1));
       for (const section of sections.reverse()) {
         const element = document.getElementById(section);
@@ -41,7 +40,7 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (href: string) => {
+  const scrollToSection = (href) => {
     const element = document.getElementById(href.substring(1));
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -55,10 +54,10 @@ export function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-keshar-dark/95 backdrop-blur-md shadow-lg border-b border-primary/20"
-            : "bg-keshar-dark/90 backdrop-blur-sm"
+            ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200"
+            : "bg-white/90 backdrop-blur-sm"
         }`}
       >
         <div className="container-wide">
@@ -90,10 +89,10 @@ export function Navbar() {
                     e.preventDefault();
                     scrollToSection(item.href);
                   }}
-                className={`relative px-3 xl:px-4 py-2 text-sm font-medium transition-colors ${
+                  className={`relative px-3 xl:px-4 py-2 text-sm font-medium transition-colors ${
                     activeSection === item.href.substring(1)
                       ? "text-primary"
-                      : "text-keshar-cream/90 hover:text-primary"
+                      : "text-keshar-dark hover:text-primary"
                   }`}
                   whileHover={{ scale: 1.05 }}
                 >
@@ -108,7 +107,7 @@ export function Navbar() {
               ))}
             </div>
 
-            {/* CTA Button - Desktop only, hidden on mobile since mobile menu has it */}
+            {/* CTA Button - Desktop only */}
             <div className="hidden lg:flex items-center gap-4">
               <motion.a
                 href="tel:+919876543210"
@@ -122,7 +121,7 @@ export function Navbar() {
 
             {/* Mobile Menu Button */}
             <motion.button
-              className="lg:hidden p-2 text-keshar-cream"
+              className="lg:hidden p-2 text-keshar-dark"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               whileTap={{ scale: 0.9 }}
             >
@@ -144,7 +143,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-16 left-0 right-0 z-40 bg-keshar-dark/98 backdrop-blur-lg lg:hidden border-t border-primary/20"
+            className="fixed top-16 left-0 right-0 z-40 bg-white/98 backdrop-blur-lg lg:hidden border-t border-gray-200 shadow-lg"
           >
             <div className="container-wide py-4">
               <div className="flex flex-col gap-2">
@@ -159,10 +158,10 @@ export function Navbar() {
                       e.preventDefault();
                       scrollToSection(item.href);
                     }}
-                  className={`px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                    className={`px-4 py-3 rounded-lg text-base font-medium transition-colors ${
                       activeSection === item.href.substring(1)
-                        ? "bg-primary/20 text-primary"
-                        : "text-keshar-cream hover:bg-primary/10 hover:text-primary"
+                        ? "bg-primary/10 text-primary"
+                        : "text-keshar-dark hover:bg-primary/10 hover:text-primary"
                     }`}
                   >
                     {item.label}
