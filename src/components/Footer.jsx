@@ -36,7 +36,7 @@ const socialLinks = [
 ];
 
 export function Footer() {
-  const scrollToSection = (href: string) => {
+  const scrollToSection = (href) => {
     const element = document.getElementById(href.substring(1));
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
