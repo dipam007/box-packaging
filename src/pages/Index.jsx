@@ -147,7 +147,7 @@ const Index = () => {
           className="absolute -right-28 -bottom-24 w-72 h-72 bg-pink-200 opacity-30 rounded-full blur-3xl animate-blob"
           style={{ animationDelay: "2s" }}
         />
-      </div>
+      </div> 
 
       <style>{`
         @keyframes blob {
