@@ -124,7 +124,7 @@ export function HeroSection() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: 0.9 + index * 0.1 }}
-                className="flex flex-col items-center p-4 rounded-2xl bg-secondary/50 backdrop-blur-sm border border-border/50"
+                className="flex flex-col items-center mb-4 p-4 rounded-2xl bg-secondary/50 backdrop-blur-sm border border-border/50"
               >
                 <stat.icon className="w-6 h-6 text-primary mb-2" />
                 <span className="text-2xl md:text-3xl font-bold text-secondary-foreground">

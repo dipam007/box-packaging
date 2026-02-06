@@ -13,24 +13,24 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+91 98765 43210", "+91 98765 43211"],
-    action: "tel:+919876543210",
+    details: ["+91 99042 44366", "+91 99041 44366", "+91 99099 44366"],
+    action: "tel:+919904244366",
     actionLabel: "Call Now",
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@kesharpackaging.com", "sales@kesharpackaging.com"],
-    action: "mailto:info@kesharpackaging.com",
+    details: ["Kesharpackaging@yahoo.com"],
+    action: "mailto:Kesharpackaging@yahoo.com",
     actionLabel: "Send Email",
   },
   {
     icon: MapPin,
     title: "Address",
     details: [
-      "Keshar Packaging Industries",
-      "Industrial Area, Phase 2",
-      "Ahmedabad, Gujarat - 380024",
+      "389,90,91, KESHAR HOUSE, SHUBHAM INDUSTRIAL ESTATE",
+      "Nr.HOTEL TORAN, CANAL ROAD", 
+      "NH. 8,SURAT",
     ],
     action: "https://maps.google.com",
     actionLabel: "Get Directions",
@@ -39,7 +39,7 @@ const contactInfo = [
     icon: Clock,
     title: "Working Hours",
     details: [
-      "Monday - Saturday: 9:00 AM - 7:00 PM",
+      "Monday - Saturday: 9:00AM - 7:00PM",
       "Sunday: Closed",
     ],
     action: null,
@@ -144,7 +144,7 @@ export function ContactSection() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <motion.a
-                href="tel:+919876543210"
+                href="tel:+919904244366"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-foreground text-primary rounded-full font-semibold shadow-lg hover:shadow-xl transition-shadow"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -153,7 +153,7 @@ export function ContactSection() {
                 Call Now
               </motion.a>
               <motion.a
-                href="mailto:info@kesharpackaging.com"
+                href="mailto:Kesharpackaging@yahoo.com"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary-foreground text-primary-foreground rounded-full font-semibold hover:bg-primary-foreground/10 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

@@ -126,26 +126,27 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-secondary-foreground/70">
-                  Industrial Area, Phase 2<br />
-                  Ahmedabad, Gujarat - 380024
+                  389,90,91, KESHAR HOUSE, SHUBHAM INDUSTRIAL ESTATE,
+                  Nr.HOTEL TORAN, CANAL ROAD,
+                  NH. 8,SURAT
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919904244366"
                   className="text-secondary-foreground/70 hover:text-primary transition-colors"
                 >
-                  +91 98765 43210
+                  +91 99042 44366
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
-                  href="mailto:info@kesharpackaging.com"
+                  href="mailto:Kesharpackaging@yahoo.com"
                   className="text-secondary-foreground/70 hover:text-primary transition-colors"
                 >
-                  info@kesharpackaging.com
+                  Kesharpackaging@yahoo.com
                 </a>
               </li>
             </ul>
@@ -158,7 +159,8 @@ export function Footer() {
         <div className="container-wide py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-secondary-foreground/60 text-sm text-center md:text-left">
-              © {new Date().getFullYear()} Keshar Packaging. All rights reserved.
+              © {new Date().getFullYear()} Keshar Packaging. All rights
+              reserved.
             </p>
             <div className="flex items-center gap-6 text-sm text-secondary-foreground/60">
               <a href="#" className="hover:text-primary transition-colors">
