@@ -32,7 +32,7 @@ const contactInfo = [
       "Nr.HOTEL TORAN, CANAL ROAD", 
       "NH. 8,SURAT",
     ],
-    action: "https://maps.google.com",
+    action: "https://maps.app.goo.gl/URCxb1tA7R8VpBbL9",
     actionLabel: "Get Directions",
   },
   {
