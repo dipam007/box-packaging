@@ -110,7 +110,7 @@ export function Navbar() {
             {/* CTA Button - Desktop only */}
             <div className="hidden lg:flex items-center gap-4">
               <motion.a
-                href="tel:+919876543210"
+                href="tel:+919909944366"
                 className="flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-full text-sm font-semibold hover:bg-primary/90 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -168,7 +168,7 @@ export function Navbar() {
                   </motion.a>
                 ))}
                 <motion.a
-                  href="tel:+919876543210"
+                  href="tel:+919909944366"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: navItems.length * 0.05 }}
